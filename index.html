@@ -24,23 +24,24 @@
     let result;
 
     function playRound(compSelection, playerSelection) {
-      if(compSelection == 'rock' && playerSelection == 'rock') {
+      let playerSelectionStr = playerSelection.toLowerCase();
+      if(compSelection == 'rock' && playerSelectionStr == 'rock') {
         result = 'You tie. Computer chose Rock';
-      }else if(compSelection == 'rock' && playerSelection == 'scissors') {
+      }else if(compSelection == 'rock' && playerSelectionStr == 'scissors') {
         result = 'You Lose! Computer chose Rock. Rock beats Scissors';
-      }else if(compSelection == 'rock' && playerSelection == 'paper') {
+      }else if(compSelection == 'rock' && playerSelectionStr == 'paper') {
         result = 'You Win! Computer chose Rock. Paper beats Rock';
-      }else if(compSelection == 'paper' && playerSelection == 'paper') {
+      }else if(compSelection == 'paper' && playerSelectionStr == 'paper') {
         result = 'You tie. Computer chose Paper';
-      }else if(compSelection == 'paper' && playerSelection == 'rock') {
+      }else if(compSelection == 'paper' && playerSelectionStr == 'rock') {
         result = 'You Lose! Computer chose Paper. Paper beats Rock';
-      }else if(compSelection == 'paper' && playerSelection == 'scissors') {
+      }else if(compSelection == 'paper' && playerSelectionStr == 'scissors') {
         result = 'You win! Computer chose Paper. Scissors beats Paper';
-      }else if(compSelection == 'scissors' && playerSelection == 'scissors') {
+      }else if(compSelection == 'scissors' && playerSelectionStr == 'scissors') {
         result = 'You tie. Computer chose Scissors';
-      }else if(compSelection == 'scissors' && playerSelection == 'rock') {
+      }else if(compSelection == 'scissors' && playerSelectionStr == 'rock') {
         result = 'You Win! Computer chose Scissors. Rock beats Scissors';
-      }else if(compSelection == 'scissors' && playerSelection == 'paper') {
+      }else if(compSelection == 'scissors' && playerSelectionStr == 'paper') {
         result = 'You Lose! Computer chose Scissors. Scissors beats Paper';
       }
       return result;
