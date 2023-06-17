@@ -1,0 +1,104 @@
+body {
+  background-color: #F5EFE7;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #D8C4B6;
+  margin: 0;
+  font-family: 'Oi', cursive;
+  font-size: 50px;
+  color: #213555;
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  font-family: 'Kenia', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 30px
+}
+
+.sub-title {
+  font-family: 'Carter One', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.rps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  gap: 60px;
+}
+
+.rock,
+.paper,
+.scissors {
+  background-color: #213555;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 80px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.rock:active,
+.paper:active,
+.scissors:active {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.total-results {
+  border: 5px solid #213555;
+  border-radius: 10px;
+  width: 500px;
+  margin: auto;
+  padding: 10px 0 20px 0; 
+}
+
+.results-title {
+  text-align: center;
+  font-family: 'Carter One', cursive;
+  font-size: 30px;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  margin-top: 20px;
+}
+
+.player,
+.computer {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+
+.results {
+  text-align: center;
+  margin-top: 30px;
+}
